@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  TechFruits
+//
+//  Created by TaiND on 12/1/15.
+//  Copyright (c) 2015 Toan Lai. All rights reserved.
+//
+
+#ifndef TechFruits_PrefixHeader_pch
+#define TechFruits_PrefixHeader_pch
+
+#import <Availability.h>
+#ifdef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 or later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MainVC.h"
+#import "AppDelegate.h"
+
+
+#define MR_SHORTHAND
+#import "CoreData+MagicalRecord.h"
+#endif
+#endif

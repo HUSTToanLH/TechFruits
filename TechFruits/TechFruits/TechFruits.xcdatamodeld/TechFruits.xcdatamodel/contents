@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Fruits" representedClassName="Fruits" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fruitsDetail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FruitsDetail" inverseName="fruits" inverseEntity="FruitsDetail" syncable="YES"/>
+    </entity>
+    <entity name="FruitsDetail" representedClassName="FruitsDetail" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="fruits" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Fruits" inverseName="fruitsDetail" inverseEntity="Fruits" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Fruits" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="FruitsDetail" positionX="-54" positionY="-9" width="128" height="105"/>
+    </elements>
+</model>
