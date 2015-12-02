@@ -19,7 +19,7 @@
 #import <Foundation/Foundation.h>
 #import "MainVC.h"
 #import "AppDelegate.h"
-
+#import "UIImage+Extend.h"
 
 #define MR_SHORTHAND
 #import "CoreData+MagicalRecord.h"
